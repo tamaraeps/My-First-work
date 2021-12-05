@@ -14,8 +14,8 @@
     <header class="d-flex">
         <div class="container">
             <div class="d-flex">
-                <nav>
-                    <a href="#">
+                <nav class="d-flex">
+                    <a class="d-flex" href="#" >
                         <img src="./assets/logo/download.png" alt="Visual Studio Logo">
                         <span>Visual studio code</span>
                     </a>
@@ -27,19 +27,18 @@
                     <a href="#">Faq</a>
                     <a href="#">Learn</a>
                 </nav>
-                <nav class="nav-bar-right">
+                <nav class="nav-bar-right d-flex">
                     <input type="text" name="search" placeholder="Search docs">
-                    <a href="#">
-                        <i class="fas fa-long-arrow-alt-down"></i>
-                        <span>Download</span>
+                    <a class="d-flex" href="#">
+                        <i class="fas fa-long-arrow-alt-down">Download</i>
                     </a>
                 </nav>
             </div>
         </div>
     </header>
     <div class="notification-bar">
-        <div class="container">
-            <p>
+        <div class="container d-flex">
+            <p class="d-flex">
                 <a href="#">Version 1.62</a>
                  is now available! Read about the new features and fixes from October.
             </p>
@@ -47,17 +46,29 @@
     </div>
     <div class="welcome-container">
         <div class="container d-flex">
-            <div class="welcome-text-conatiner d-flex">
-                <h1>Code Editing.<br>
-                    <b>Redefined.</b></h1>
-                <p>Free. Built on open source. Runs everywhere.</p>
-                <a class="welcome-container-button"href="#">
-                    Download for Windows
-                </a>
-
+            <div class="welcome-download-conatiner d-flex">
+                <div class="d-flex welcome-text-container">
+                    <h1>Code Editing.<br>
+                        <b>Redefined.</b></h1>
+                    <p>Free. Built on open source. Runs everywhere.</p>
+                </div>
+                <div class="d-flex welcome-container-button">
+                    <div class="dowloand-text">
+                        <a href="#">
+                        <h2> Download for Windows</h2>
+                        <p>Stable Build</p>
+                        </a>
+                    </div>
+                    <div class="chevron-download d-flex"> 
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="welcome-download-conatiner-other d-flex">
+                    <p><a href="#">Other platforms</a> and <a href="#">Insiders Edition</a></p>
+                </div>   
             </div>
-            <img src="./assets/img/home-screenshot-win.png" alt="HTML image">
-        </div>
+            <img src="./assets/img/home-screenshot-win.png" alt="HTML image">   
+   
     </div>
     <div class="main-links-container">
         <div class="container d-flex">
