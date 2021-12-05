@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+}
+
+header{
+    background: #2C2C32;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+}
+
+header .d-flex{
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .d-flex a{
+    color: rgb(223, 213, 213);
+    text-decoration: none;
+    padding: 0 5px;
+    align-items: center;
+
+}
+
+.nav-bar-left{
+    align-items: center;
+}
+
+header .d-flex img{
+    width: 24px;
+    height: 21px;
+    padding: 0 5px;
+    align-items: baseline;
+}
+.d-flex nav{
+    align-items: center;
+    height: 30px;
+}
+
+header .d-flex span{
+    font-size: 20px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.nav-bar-right input{
+    border-radius: 3px;
+    border: 2px solid #ccc;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-image: url(../assets/icons/search-solid.svg);
+    padding: 2px 2px 1px 20px;
+}
+
+.nav-bar-right a{
+    background-color: rgb(13, 13, 190);
+    height: 30px;
+}
+.container{
+    width: 970px;
+    margin:auto;
+}
+
+.d-flex{
+    display: flex;
+
+}
+
+.notification-bar{
+    background-color: #25252B;
+    padding:60px 0 10px 0;
+  
+}
+
+.notification-bar p{
+    color: #ccc;
+    margin: 0;
+    text-align: center;
+}
+
+.welcome-container{
+    background: #2C2C32;
+    padding: 50px 0;
+
+}
+
+.welcome-text-conatiner{
+    width: 25%;
+}
+
+.welcome-container img{
+    width: 75%;
+}
+
+.main-links-container a{
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    flex-direction: column;
+    color: #444;
+    padding: 15px 0;
+}
+.main-links-container i{
+    font-size: 30px;
+}
+
+.main-links-container a:hover{
+    color: rgb(20, 20, 150);
+}
+.welcome-text-conatiner{
+    text-align: center;
+    flex-direction: column;
+}
+
+.welcome-container-button{
+    height: 30px;
+    background-color: rgb(16, 16, 138);
+    text-decoration: none;
+    color: rgb(211, 201, 201);
+    text-align: center;
+    pad: 5px;
+    font-size: 18px;
+}
+
+.welcome-text-conatiner p{
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+
+}
