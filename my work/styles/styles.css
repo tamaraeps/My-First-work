@@ -6,6 +6,12 @@ h2{
     color: #444;
     font-weight: 100px;
 }
+h1{
+color: white;
+font-weight:100;
+letter-spacing: 0.7px;
+font-size: 40px;
+}
 
 body{
     margin: 0;
@@ -204,6 +210,7 @@ header .d-flex span{
     color: white;
     margin: 0;
     text-align: center;
+    font-weight: 200;
 }
 
 .welcome-container-button p{
@@ -241,8 +248,11 @@ header .d-flex span{
 .welcome-download-conatiner-other a{
     align-items: center;
     text-decoration: none;
-    color: rgb(75, 75, 241);
+    color: #0071bc;
     
+}
+.welcome-download-conatiner-other a:hover{
+    text-decoration: underline;
 }
 
 .coment-container{
