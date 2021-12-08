@@ -1,3 +1,12 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+h2{
+    color: #444;
+    font-weight: 100px;
+}
+
 body{
     margin: 0;
 }
@@ -8,6 +17,7 @@ header{
     position: fixed;
     width: 100%;
     margin: auto;
+    z-index: 9;
 }
 
 header .d-flex{
@@ -17,11 +27,15 @@ header .d-flex{
 }
 
 header .d-flex a{
-    color: rgb(223, 213, 213);
+    color:  rgba(255,255,255,.6);
     text-decoration: none;
-    padding: 0 5px;
+    padding: 0 10px;
     align-items: center;
 
+}
+
+header .d-flex a:hover{
+    color: white;
 }
 
 .nav-bar-left{
@@ -47,46 +61,70 @@ header .d-flex span{
 
 .nav-bar-right{
     height: 50px;
+    margin: 0;
+}
+
+.search-container{
+    height: 50px;
+    width: 55%;
 }
 
 .nav-bar-right input{
-    border-radius: 3px;
-    background-repeat: no-repeat;
-    width: 60%;
-    background-image: url(../assets/icons/search-solid.svg);
-    padding: 5px 2px 1px 50px;
-    height: 40px;
-    background-color: rgb(173, 169, 169);
+
+    background-color: rgba(255,255,255,.08);
     color: rgb(255, 253, 253);
+    height: 50px;
+    border: 0;
+    margin: 0;
+}
+
+.nav-bar-right button {
+    height: 50px;
+    margin: 0;
+    border: 0;
+    background-color: rgba(255,255,255,.08);
+    max-height: 50px;
+    padding: 20px 6px 17px 6px;
+    
 }
 
 .nav-bar-right a{
-    background-color: rgb(13, 13, 190);
+    background-color: #0066b8;
     height: 50px;
     margin: 0;
-    width: 40%;
+    width: 45%;
     text-align: center;
-    font-size: 20px;
-    text-transform: uppercase;
-
-    
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    justify-content: space-around;
 }
+
+.search-container:hover {
+    border: 1px solid white;
+}
+
+.search-container button img{
+    width: 16px;
+    height: 16px;
+}
+
 .container{
-    width: 970px;
+    width: 1050px;
     margin:auto;
-    text-align: center;
+    justify-content: center;
 
 }
 
 .d-flex{
     display: flex;
-
 }
 
 .notification-bar{
     background-color: #25252B;
     padding:60px 0 10px 0;
     align-items: center;
+    justify-content: center;
   
 }
 
@@ -95,6 +133,16 @@ header .d-flex span{
     margin: 0;
     text-align: center;
     align-items: center;
+}
+
+.notification-bar p a{
+    text-decoration: none;
+    color: #0066b8;
+    margin-right: 10px;
+}
+
+.notification-bar p a:hover{
+    text-decoration: underline;
 }
 
 .welcome-container{
@@ -114,6 +162,10 @@ header .d-flex span{
     text-align: center;
 }
 
+.welcome-text-container p{
+    color: rgba(255,255,255,.6);
+}
+
 .welcome-container img{
     width: 70%;
 }
@@ -124,16 +176,17 @@ header .d-flex span{
     text-align: center;
     text-decoration: none;
     flex-direction: column;
-    color: #444;
+    color: rgb(49, 48, 48);
     padding: 15px 0;
 }
 .main-links-container i{
-    font-size: 30px;
-    color: #ccc;
+    font-size: 40px;
+    color: rgb(73, 71, 71);
 }
 
 .main-links-container a:hover{
     color: rgb(20, 20, 150);
+    background-color: #d3d1d1;
 }
 
 .main-links-container i:hover{
@@ -141,7 +194,7 @@ header .d-flex span{
 
 }
 .welcome-container-button{
-    background-color: rgb(103, 103, 248);
+    background-color: #0066b8;
     align-items: center;
     height:60px ;
 }
@@ -179,7 +232,7 @@ header .d-flex span{
 .welcome-download-conatiner-other{
     height: 40px;
     background-color: #1d1d20;
-    margin-top: 15px;
+    margin: 25px 0px;
     align-items: center;
     justify-content:center;
     border-radius: 4px;
@@ -190,4 +243,161 @@ header .d-flex span{
     text-decoration: none;
     color: rgb(75, 75, 241);
     
+}
+
+.coment-container{
+    width: 350px;
+    line-height: 25px;
+    background-color: #f5f5f5;
+    padding: 20px 5px;
+
+
+}
+.coment-container img{
+    width: 72px;
+    height: 70px;
+    padding-right: 5px;
+}
+
+.coment-container p{
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    display: block;
+    color: #444;
+}
+
+.coment-container-l{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 300px;
+    padding: 20px 0;
+}
+
+.coment-container a{
+    text-decoration: none;
+    font-weight:600;
+    color: black;
+}
+
+.coment-container-l .container{
+    position: relative;
+}
+
+.coment-container-l .arrow{
+    position: absolute;
+    top: 90px;
+    width: 23px;
+    cursor: pointer;
+
+}
+
+.coment-container-l .arrow.left{
+    left: -23px;
+}
+
+.coment-container-l .arrow.right{
+    right: -20px;
+}
+
+.coment-container p a:hover{
+    color: blue;
+}
+
+.features-container{
+    margin-top: 30px;
+    color: #444;
+    line-height: 30px;
+    justify-content: space-between;
+}
+
+.features-container .container{
+    justify-content: space-between;
+}
+
+.features-container img{
+    width: 360px;
+    min-height: 235px;
+}
+
+.features:nth-child(even){
+    background-color: #f5f5f5;
+}
+
+.features:nth-child(even) .container{
+    flex-direction: row-reverse;
+}
+
+.features{
+    padding: 20px 0;
+    color: #444;
+    font-weight: 100;
+    letter-spacing: 0.8px;
+    justify-content: space-between;
+    margin:20px 0;
+}
+
+.text-container{
+    width: 60%;
+}
+
+.languages{
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.languages .container{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.languages-list{
+    flex-wrap: wrap;
+    width: 900px;
+}
+
+.languages-list img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.languages-box{
+    font-size: 17px;
+    width: 150px;
+    align-items: center;
+    color: #444;
+    display: flex;
+}
+
+.languages-more a{
+ text-decoration: none;
+ color:rgb(75, 75, 241);
+
+}
+
+.languages-more{
+    padding: 20px 0 40px 0;
+    font-size: 18px;
+
+}
+
+.languages-more:hover{
+    text-decoration: underline;
+}
+
+.languages button {
+    background-color: #005ba4;
+    color: #fff;
+    height: 60px;
+    width: 200px;
+    border: 0;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.languages button:hover{
+    background-color: #014c8a;
 }

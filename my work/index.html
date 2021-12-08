@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
         crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@200&family=Nunito:ital,
+        wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" 
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/logo/favicon.ico">
     <title>Visual Studio</title>
 </head>
 <body>
@@ -28,9 +34,15 @@
                     <a href="#">Learn</a>
                 </nav>
                 <nav class="nav-bar-right d-flex">
-                    <input type="text" name="search" placeholder="Search docs">
+                    <div class="d-flex search-container">
+                        <button>
+                            <img src="./assets/icons/search white.svg" alt="Search icon">
+                        </button> 
+                        <input type="text" name="search" placeholder="Search docs">
+                    </div>
                     <a class="d-flex" href="#">
-                        <i class="fas fa-long-arrow-alt-down">Download</i>
+                        <i class="fas fa-long-arrow-alt-down"></i>
+                        <span>Download</span>
                     </a>
                 </nav>
             </div>
@@ -39,8 +51,8 @@
     <div class="notification-bar">
         <div class="container d-flex">
             <p class="d-flex">
-                <a href="#">Version 1.62</a>
-                 is now available! Read about the new features and fixes from October.
+                <a href="#">Version 1.62 </a>
+                is now available! Read about the new features and fixes from October.
             </p>
         </div>
     </div>
@@ -90,6 +102,137 @@
             </a>
         </div>
     </div>
-    <div>new block</div>
+    <div class="d-flex coment-container-l">
+        <div class="d-flex container">
+            <div class="d-flex coment-container">
+            <a href="#"><img src="./assets/img/coment1.jpg" alt=""></a>
+            <p> <a href="#">Una Kravets</a> @Una <br>
+                VS @code does so many things right. I’m constantly impressed by the UX, 
+                and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps 
+                getting better ❤️</p>
+            </div>
+            <div class="d-flex coment-container">
+            <a href="#"><img src="./assets/img/comnt2.jpg" alt=""></a>
+            <p> <a href="#">Jonathan Dunlap</a> @jadbox <br>
+                VS Code will have deep remote development. You can connect to a container 
+                running a different OS and use any VS Code plugins, linting, debugging for 
+                that environment. 🔥🔥🔥</p>
+            </div>
+            <div class="d-flex coment-container">
+            <a href="#"><img src="./assets/img/coment3.jpg" alt=""></a>
+            <p> <a href="#">Pavithra Kodmad </a>@PKodmad<br>
+                VS Code is my most used and favorite editor.
+                I love being able to customize the editor - changing the layout, the icons, 
+                fonts and color scheme is so easy!</p>
+            </div>
+            <img class="left arrow" src="./assets/icons/chevron-left-solid.svg" alt="">
+            <img class="right arrow" src="./assets/icons/chevron-right-solid.svg" alt="">
+        </div>
+    </div>
+    <div class="features-container">
+        <div class="features">
+            <div class="d-flex container">
+                <img src="./assets/img/home-intellisense.svg" alt="">
+                <div class="text-container">
+                    <h3>Meet IntelliSense.</h3>
+                    <p>Go beyond syntax highlighting and autocomplete with IntelliSense, 
+                        which provides smart completions based on variable types, function definitions, 
+                        and imported modules.</p>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="d-flex container">
+                <img src="./assets/img/home-debug.svg" alt="">
+                <div class="text-container">
+                    <h3>Print statement debugging is a thing of the past.</h3>
+                    <p>Debug code right from the editor. Launch or attach to your running apps 
+                            and debug with break points, call stacks, and an interactive console.</p>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="d-flex container">
+                <img src="./assets/img/home-git.svg" alt="">
+                <div class="text-container">
+                    <h3>Git commands built-in.</h3>
+                    <p>Working with Git and other SCM providers has never been easier. Review diffs, stage files, 
+                        and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="d-flex container">
+                <img src="./assets/img/Hundreds-of-Extensions.png" alt="">
+                <div class="text-container">
+                    <h3>Extensible and customizable.</h3>
+                    <p>Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in 
+                        separate processes, ensuring they won't slow down your editor. Learn more about extensions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="d-flex container">
+                <img src="./assets/img/home-azure.svg" alt="">
+                <div class="text-container">
+                    <h3>Deploy with confidence and ease</h3>
+                    <p>With Microsoft Azure you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational 
+                        and document based data, and scale with serverless computing, all with ease, all from within VS Code.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="languages">
+        <div class="container d-flex">
+            <div>
+                <h2>VS Code for</h2>
+            </div>
+            <div class="languages-list d-flex">
+                <div class="languages-box">
+                    <p><img src="./assets/icons/js.svg" alt="">JavaScript</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/python.svg" alt="">Python</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/java.svg" alt="">Java</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/markdown.svg" alt="">Markdown</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/typescript.svg" alt="">TypeScript</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/cpp.svg" alt="">C/C++</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/json.svg" alt="">JSON</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/powershell.svg" alt="">Powershell</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/html.svg" alt="">HTML/CSS</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/csharp.svg" alt="">C#</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/php.svg" alt="">PHP</p>
+                </div>
+                <div class="languages-box">
+                    <p><img src="./assets/icons/yaml.svg" alt="">YAML</p>
+                </div>
+            </div>
+            <div class="d-flex languages-more">
+                <a href="#">and many more...</a>
+            </div>
+            <div class="d-flex ">
+                <a href="#"><button>Get Started Now</button></a>
+            </div>
+        </div>   
+    </div>
+
 </body>
 </html>
