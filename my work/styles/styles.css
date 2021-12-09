@@ -237,6 +237,7 @@ header .d-flex span{
 }
 
 .welcome-download-conatiner-other{
+    position: relative;
     height: 40px;
     background-color: #1d1d20;
     margin: 25px 0px;
@@ -245,6 +246,18 @@ header .d-flex span{
     border-radius: 4px;
     color: rgb(233, 227, 227);
 }
+
+.welcome-download-conatiner-other::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 25px;
+    top: -10px;
+    background-color: rgb(29, 29, 32);
+    transform: rotate(45deg);
+}
+
 .welcome-download-conatiner-other a{
     align-items: center;
     text-decoration: none;
