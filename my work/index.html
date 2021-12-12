@@ -14,6 +14,8 @@
         wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" 
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./assets/logo/favicon.ico">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <title>Visual Studio</title>
 </head>
 <body>
@@ -25,13 +27,15 @@
                         <img src="./assets/logo/download.png" alt="Visual Studio Logo">
                         <span>Visual studio code</span>
                     </a>
-                    <a href="#">Docs</a>
-                    <a href="#">Updates</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Api</a>
-                    <a href="#">Extensions</a>
-                    <a href="#">Faq</a>
-                    <a href="#">Learn</a>
+                    <div class="wrapper-menu">
+                        <a href="#">Docs</a>
+                        <a href="#">Updates</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Api</a>
+                        <a href="#">Extensions</a>
+                        <a href="#">Faq</a>
+                        <a href="#">Learn</a>
+                    </div>
                 </nav>
                 <nav class="nav-bar-right d-flex">
                     <div class="d-flex search-container">
@@ -45,11 +49,14 @@
                         <span>Download</span>
                     </a>
                 </nav>
+                <div class="responsive-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
     <div class="notification-bar">
-        <div class="container d-flex">
+        <div class="container d-flex notification-bar">
             <p class="d-flex">
                 <a href="#">Version 1.62 </a>
                 is now available! Read about the new features and fixes from October.
@@ -57,7 +64,7 @@
         </div>
     </div>
     <div class="welcome-container">
-        <div class="container d-flex">
+        <div class="container d-flex welcome-container-wrapper">
             <div class="welcome-download-conatiner d-flex">
                 <div class="d-flex welcome-text-container">
                     <h1>Code Editing.<br>
@@ -79,11 +86,11 @@
                     <p><a href="#">Other platforms</a> and <a href="#">Insiders Edition</a></p>
                 </div>   
             </div>
-            <img src="./assets/img/home-screenshot-win.png" alt="HTML image">   
+            <img class="img-wrapper" src="./assets/img/home-screenshot-win.png" alt="HTML image">   
         </div>
     </div>
-    <div class="main-links-container">
-        <div class="container d-flex">
+    <div class="main-links-container d-flex">
+        <div class="container d-flex main-links-container-wrapper">
             <a class="d-flex" href="">
                 <i class="far fa-lightbulb"></i>
                 <p>Intellisense</p>
@@ -103,13 +110,13 @@
         </div>
     </div>
     <div class="d-flex coment-container-l">
-        <div class="d-flex container">
+        <div class="d-flex container coment-container-l-wrapper">
             <div class="d-flex coment-container">
-            <a href="#"><img src="./assets/img/coment1.jpg" alt=""></a>
-            <p> <a href="#">Una Kravets</a> @Una <br>
-                VS @code does so many things right. I’m constantly impressed by the UX, 
-                and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps 
-                getting better ❤️</p>
+                <a href="#"><img src="./assets/img/coment1.jpg" alt=""></a>
+                <p> <a href="#">Una Kravets</a> @Una <br>
+                    VS @code does so many things right. I’m constantly impressed by the UX, 
+                    and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps 
+                    getting better ❤️</p>
             </div>
             <div class="d-flex coment-container">
             <a href="#"><img src="./assets/img/comnt2.jpg" alt=""></a>
@@ -119,11 +126,11 @@
                 that environment. 🔥🔥🔥</p>
             </div>
             <div class="d-flex coment-container">
-            <a href="#"><img src="./assets/img/coment3.jpg" alt=""></a>
-            <p> <a href="#">Pavithra Kodmad </a>@PKodmad<br>
-                VS Code is my most used and favorite editor.
-                I love being able to customize the editor - changing the layout, the icons, 
-                fonts and color scheme is so easy!</p>
+                <a href="#"><img src="./assets/img/coment3.jpg" alt=""></a>
+                <p> <a href="#">Pavithra Kodmad </a>@PKodmad<br>
+                    VS Code is my most used and favorite editor.
+                    I love being able to customize the editor - changing the layout, the icons, 
+                    fonts and color scheme is so easy!</p>
             </div>
             <img class="left arrow" src="./assets/icons/chevron-left-solid.svg" alt="">
             <img class="right arrow" src="./assets/icons/chevron-right-solid.svg" alt="">
@@ -131,7 +138,7 @@
     </div>
     <div class="features-container">
         <div class="features">
-            <div class="d-flex container">
+            <div class="d-flex container features-wrapper">
                 <img src="./assets/img/home-intellisense.svg" alt="">
                 <div class="text-container">
                     <h3>Meet IntelliSense.</h3>
@@ -142,7 +149,7 @@
             </div>
         </div>
         <div class="features">
-            <div class="d-flex container">
+            <div class="d-flex container features-wrapper">
                 <img src="./assets/img/home-debug.svg" alt="">
                 <div class="text-container">
                     <h3>Print statement debugging is a thing of the past.</h3>
@@ -152,7 +159,7 @@
             </div>
         </div>
         <div class="features">
-            <div class="d-flex container">
+            <div class="d-flex container features-wrapper">
                 <img src="./assets/img/home-git.svg" alt="">
                 <div class="text-container">
                     <h3>Git commands built-in.</h3>
@@ -162,7 +169,7 @@
             </div>
         </div>
         <div class="features">
-            <div class="d-flex container">
+            <div class="d-flex container features-wrapper">
                 <img src="./assets/img/Hundreds-of-Extensions.png" alt="">
                 <div class="text-container">
                     <h3>Extensible and customizable.</h3>
@@ -172,9 +179,9 @@
             </div>
         </div>
         <div class="features">
-            <div class="d-flex container">
+            <div class="d-flex container features-wrapper">
                 <img src="./assets/img/home-azure.svg" alt="">
-                <div class="text-container">
+                <div class="">
                     <h3>Deploy with confidence and ease</h3>
                     <p>With Microsoft Azure you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational 
                         and document based data, and scale with serverless computing, all with ease, all from within VS Code.</p>
@@ -183,7 +190,7 @@
         </div>
     </div>
     <div class="languages">
-        <div class="container d-flex">
+        <div class="container d-flex languages-wrapper">
             <div>
                 <h2>VS Code for</h2>
             </div>
@@ -232,6 +239,100 @@
                 <a href="#"><button>Get Started Now</button></a>
             </div>
         </div>   
+    </div>
+    <div class="downloads container d-flex">
+        <div class="windows d-flex">
+            <img class="logo" src="./assets/icons/windows.png" alt="Windows logo">
+            <div class="download-arrow d-flex">
+                <div> 
+                    <img src="./assets/icons/download arrow.svg" alt="">
+                    Windows
+                </div>
+                <small>Windows 7,8,10,11</small>
+            </div>
+            <table class="win-downloads">
+                <tr>
+                    <td>User Installer</td>
+                    <td><a href="#">64bit</a></td>
+                    <td><a href="#">32bit</a></td>
+                    <td><a href="#">arm</a></td>
+                </tr>
+                <tr>
+                    <td>System Installe</td>
+                    <td><a href="#">64bit</a></td>
+                    <td><a href="#">32bit</a></td>
+                    <td><a href="#">arm</a></td>
+                </tr>
+                <tr>
+                    <td>.zip</td>
+                    <td><a href="#">64bit</a></td>
+                    <td><a href="#">32bit</a></td>
+                    <td><a href="#">arm</a></td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="linux d-flex">
+            <img class="logo" src="./assets/icons/linux.png" alt="Windows logo">
+            <div class="download-arrow-linux d-flex">
+                <div class="download-arrow d-flex"> 
+                    <div>
+                    <img src="./assets/icons/download arrow.svg" alt="">
+                    .deb
+                    </div>
+                    <small>Debian, Ubuntu</small>
+                </div>
+                <div class="download-arrow d-flex"> 
+                    <div>
+                    <img src="./assets/icons/download arrow.svg" alt="">
+                   .rpm</div>
+                   <small>Red heat, fedora, SUSE</small>
+                </div>
+                
+            </div>
+            <table class="Linux-downloads d-flex">
+                <tr>
+                    <td> .deb</td>
+                    <td><a href="#">64bit</a></td>
+                    <td><a href="#">ARM</a></td>
+                    <td><a href="#">ARM 64</td>
+                </tr>
+                <tr>
+                    <td>.rpm</td>
+                    <td><a href="#">64bit</a></td>
+                    <td><a href="#">ARM</a></td>
+                    <td><a href="#">ARM 64</a></td>
+                </tr>
+                <tr>
+                    <td>.tar.gaz</td>
+                    <td><a href="#">64bit</a></td>
+                    <td><a href="#">ARM</a></td>
+                    <td><a href="#">ARM 64</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Snap Store</a></td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="mac d-flex">
+            <img class="logo" src="./assets/icons/mac.svg" alt="Windows logo">
+            <div class="download-arrow d-flex">
+                <div>
+                <img src="./assets/icons/download arrow.svg" alt="">
+                Mac
+                </div>
+                <small>MacOS 10.11+</small>
+            </div>
+            <table class="Mac-downloads">
+                <tr>
+                    <td> .zip</td>
+                    <td><a href="#">universal</a></td>
+                    <td><a href="#">intel chip</a></td>
+                    <td><a href="#">Apple silicone</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
 </body>

@@ -128,7 +128,7 @@ header .d-flex span{
 
 .notification-bar{
     background-color: #25252B;
-    padding:60px 0 10px 0;
+    padding:30px 0 5px 0;
     align-items: center;
     justify-content: center;
   
@@ -184,10 +184,13 @@ header .d-flex span{
     flex-direction: column;
     color: rgb(49, 48, 48);
     padding: 15px 0;
+    width: 250px;
 }
+
 .main-links-container i{
     font-size: 40px;
     color: rgb(73, 71, 71);
+
 }
 
 .main-links-container a:hover{
@@ -203,6 +206,7 @@ header .d-flex span{
     background-color: #0066b8;
     align-items: center;
     height:60px ;
+    width: 315px;
 }
 
 .welcome-container-button h2{
@@ -239,7 +243,7 @@ header .d-flex span{
 .welcome-download-conatiner-other{
     position: relative;
     height: 40px;
-    background-color: #1d1d20;
+    background-color: #25252b;
     margin: 25px 0px;
     align-items: center;
     justify-content:center;
@@ -250,11 +254,11 @@ header .d-flex span{
 .welcome-download-conatiner-other::before {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
-    right: 25px;
-    top: -10px;
-    background-color: rgb(29, 29, 32);
+    width: 17px;
+    height: 17px;
+    right: 17px;
+    top: -8px;
+    background-color: #25252b;
     transform: rotate(45deg);
 }
 
@@ -423,4 +427,106 @@ header .d-flex span{
 
 .languages button:hover{
     background-color: #014c8a;
+}
+
+.downloads{
+    flex-direction: row;
+    justify-content: space-between;
+    height: 500px;
+    align-items: flex-start;
+    margin-top: 50px;
+
+}
+
+
+.windows , .linux ,.mac{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.download-arrow img{
+    width: 18px;
+    height: 18px;
+}
+
+.download-arrow{
+    background-color: #0066b8;
+    border-radius: 3px;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    line-height: 25px;
+    font-size: 15px;
+    color: white;
+    margin: 20px 0;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.windows{
+    width: 320px;
+}
+
+.mac{
+    width: 320px;
+}
+
+.linux{
+    width: 410px;
+}
+
+.windows .download-arrow{
+    width: 230px;
+    align-items: center;
+}
+
+.download-arrow-linux{
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.download-arrow-linux .download-arrow{
+    width: 150px;
+    margin: 3px;
+
+
+}
+
+.mac .download-arrow{
+    width: 230px;
+    align-items: center;
+}
+
+td a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0066b8;
+    font-size: 12px;
+    padding: 0 3px;
+    white-space: nowrap;
+    border-radius: 2px;
+}
+
+.responsive-menu {
+    
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+    display: none;
+    margin-right: 10px;
+}
+
+.responsive-menu:hover{
+    background-color: #0066b8;
+    border-radius: 3px;
+    
 }

@@ -1,0 +1,131 @@
+@media screen and (max-width:1050px){
+
+    .wrapper-menu{
+        display: none;
+    }
+    .nav-bar-right {
+        display: none;
+    }
+    .responsive-menu{
+        display: block;
+    }
+    .notification-bar{
+        width: initial;
+        font-size: 15px;
+    }
+    
+    .welcome-container-wrapper{
+        margin:auto;
+        width: initial;
+        display: block;
+        text-align: center;
+
+    }
+    .welcome-container-button{
+        margin:auto;
+    }
+    
+    .welcome-download-conatiner{
+        margin: auto;
+        width: 100%;
+    }
+
+    .welcome-text-container{
+        width: 100%;
+        display: block;
+    
+    }
+
+    .welcome-download-conatiner-other {
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .main-links-container-wrapper{
+        width: 100%;
+    }
+
+    .coment-container-l-wrapper{
+        display: block;
+           
+    }
+    
+    .features-wrapper{
+        width: 100%;
+       
+    }
+
+    .coment-container{
+        width: 100%;
+        width: initial;
+        
+    }
+    .languages-wrapper{
+        margin: auto;
+        width: 100%;
+        
+    }
+    .languages-list{
+        width: 100%;
+        margin: auto;
+        height: 230px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .downloads{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:745px){
+    .main-links-container-wrapper{
+        flex-flow: row wrap;
+    }
+    .features-container{
+        margin-top: 80px;
+    }
+
+    .features-wrapper{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .text-container{
+        margin: auto;
+    }
+
+    .languages-list{
+        width: 100%;
+        margin: auto;
+        height: 300px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .downloads{
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:450px){
+    .languages-list{
+        width: 100%;
+        margin: auto;
+        height: 370px;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 0px;
+    }
+    .logo {
+        margin: auto;
+        text-align: center;
+    }
+}
+        
+    
